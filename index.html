@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="js/jquery.min.js"></script>
+
+    <script>
+    function set_validator_errors(){
+        orderValidator.errorTitle = 'Kérjük javítsd ki a következő hibákat'; 
+
+        orderValidator.errorNameField = 'Név'; 
+        orderValidator.errorNameMess = 'Adja meg nevét'; 
+        
+        orderValidator.errorPhoneField = 'Telefonszám'; 
+        orderValidator.errorPhoneMess = 'Írja be a helyes telefonszámot'; 
+        
+        orderValidator.errorAddress = 'Írja be a helyes címet'; 
+        orderValidator.errorRequired = 'kötelező mező'; 
+        orderValidator.errorMaxLength = 'érvényes maximális {1} karakter'; 
+        orderValidator.errorMinLength = 'érvényes minimum {1} karakter'; 
+        orderValidator.errorEmailField = 'E-mail';
+        orderValidator.errorEmail = 'Érvénytelen e-mail megadva';
+        }
+    </script>
+    
+<script>
+
+
+<script src="js/form.validate.js"></script>
+<script src="js/form.incomplete.js"></script>
+<script src="js/main2.js"></script>
+
+
+
+
+<script src="js/jquery.min_1.js"></script>
+	<title>FreshpackPro - VÁKUUM CSOMAGOLÓ A KONYHÁBA</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=480">
+	<meta name="description" content="FreshpackPro - VÁKUUM CSOMAGOLÓ A KONYHÁBA">
+
+    <link href="css/css.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<style>
+		.res-i{
+		margin:15px auto;width: 90%;
+		border-radius:20px;
+		}
+	</style>
+
+</head>
+<body class="lang-hu">
+
+	<div class="main_wrapper">
+
+		<!-- fixed block -->
+
+		<div class="fixed_section">
+			<div class="fixed_block clearfix">
+				<h3>FreshpackPro</h3>
+				<a class="button" href="#order">RENDELJE MEG MOST</a>
+			</div>
+		</div>
+
+		<!-- /fixed block -->
+
+		<!-- offer -->
+<section class="order_section dark_theme in-blue_title">
+		<div class="offer_section">
+			<div class="offer_title">
+				<h1>FreshpackPro</h1>
+				<p>VÁKUUM CSOMAGOLÓ A KONYHÁBA</p>
+			</div>
+			<img src="images/offer_top.jpg" alt="Раскладной стол">
+		</div>
+		<div class="title_block">
+				<h2>RENDELJEN  <i>FreshpackPro-t</i></h2>
+			</div>
+			<div class="order_block">
+				<div class="price_block clearfix">
+					<div class="price_item old">
+						<div class="text">Régi ár:</div>
+						<div class="value"><x-oldprice>29800</x-oldprice> <x-currency>Ft</x-currency></div>
+					</div>
+					<div class="price_item new">
+						<div class="text">ÚJ ÁR:</div>
+						<div class="value"><x-newprice>14900</x-newprice> <x-currency>Ft</x-currency></div>
+					</div>
+				</div>
+				<form class="order_form" action="https://healthbestblog.space/cpatl/api.php" method="post">
+					   
+    <select name="offer" class="form-control country_chang" style="display: none;">
+        <option data-country-code="HU" selected="selected" value="20529">
+            Венгрия        </option>
+    </select>
+
+    					<input class="field" type="text" name="name" placeholder="Adja meg nevét" required data-ordername="">
+					<input class="field" type="tel" name="phone" placeholder="Írja be a telefonszámát" required data-orderphone="">
+                    <input class="button" value="RENDELJE MEG MOST" type="submit" data-ordersubmit="">
+                           <input type="hidden" name="stream_hid" value="QE4Ta0Rg">
+      <input type="hidden" name="offer_id" value="4945">
+
+      
+      <input type="hidden" name="country" value="HU"> 
+
+      <input type="hidden" name="sid1" value="alex">
+      <input type="hidden" name="sid2" value="alex2">
+      <input type="hidden" name="sid3" value="alex3">
+      <input type="hidden" name="redirect_url" value="https://amazinghealth.github.io/germitox-ita/success/index.html">
+				</form>
+				
+				<p class="deadline_text">Csak 16 darab van raktáron!</p>
+			</div>
+			</section>
+
+		<section class="description_section">
+			<div class="title_block">
+				<h2>KÖNNYEN TERMÉKTÁROLÁSI MEGOLDÁS!</h2>
+			</div>
+			<div class="content_block">
+				<img class="post_image" src="images/about1.jpg" alt="Раскладной стол">
+				<div class="text_block">
+					<p><b>Ez a kompakt ürítő segít bármely termék gyors csomagolásában hosszú távú tárolás céljából. Ideális kis mennyiségű élelmiszer csomagolásához tárolásra, mélyfagyasztás közben megvédi őket a jégképződéstől. Csomagolt formában a termékek kevesebb helyet foglalnak el a hűtőszekrényben, így tágasabb a hűtőszekrény. Maga az eszköz pedig kompakt és könnyen kezelhető.</b></p>
+				</div>
+				<img class="post_image" src="images/about2.jpg" alt="Раскладной стол">
+				<div class="text_block">
+					<p>Az élelmiszer vákuum-csomagoló használata nemcsak az élelmiszerek megőrzését segíti elő, hanem a bennük lévő vitaminok és ásványi anyagok megőrzését is. A termékeket vákuumban viheti magával az útra, anélkül, hogy tartania kellene, hogy megmérgezi magát.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- /description -->
+
+		<!-- benefits 6.1 -->
+
+		<section class="list_section dark_theme">
+			<div class="title_block">
+				<h2>KÖNNYEN KEZELHETŐ</h2>
+			</div>
+			<div class="content_block">
+				
+				<div style="text-align:center">
+                            <img src="images/img-top.jpg" alt="FreshpackPro" class="res-i">
+                            <img src="images/img-top2.jpg" alt="FreshpackPro" class="res-i">
+                            <img src="images/img-top3.jpg" alt="FreshpackPro" class="res-i">
+                            <img src="images/img-top4.jpg" alt="FreshpackPro" class="res-i">
+                        </div>
+
+			
+			</div>
+		</section>
+
+		<!-- /benefits 6.1 -->
+
+		<!-- order 1.2 -->
+
+		<section class="order_section in-blue_title">
+			<div class="title_block">
+				<h2>RENDELJEN <i>FreshpackPro-t</i></h2>
+			</div>
+			<div class="order_block">
+				<div class="price_block clearfix">
+					<div class="price_item old">
+						<div class="text">Régi ár:</div>
+						<div class="value"><x-oldprice>29800</x-oldprice> <x-currency>Ft</x-currency></div>
+					</div>
+					<div class="price_item new">
+						<div class="text">ÚJ ÁR:</div>
+						<div class="value"><x-newprice>14900</x-newprice> <x-currency>Ft</x-currency></div>
+					</div>
+				</div>
+				<form class="order_form" action="https://healthbestblog.space/cpatl/api.php" method="post">
+					  
+    <select name="offer" class="form-control country_chang" style="display: none;">
+        <option data-country-code="HU" selected="selected" value="20529">
+            Венгрия        </option>
+    </select>
+
+    					<input class="field" type="text" name="name" placeholder="Adja meg nevét" required data-orderphone="">
+					<input class="field" type="tel" name="phone" placeholder="Írja be a telefonszámát" required data-ordersubmit="">
+					<input class="button" value="RENDELJE MEG MOST" type="submit" data-ordersubmit="">
+                        <input type="hidden" name="stream_hid" value="QE4Ta0Rg">
+      <input type="hidden" name="offer_id" value="4945">
+
+      
+      <input type="hidden" name="country" value="HU"> 
+
+      <input type="hidden" name="sid1" value="alex">
+      <input type="hidden" name="sid2" value="alex2">
+      <input type="hidden" name="sid3" value="alex3">
+      <input type="hidden" name="redirect_url" value="https://amazinghealth.github.io/germitox-ita/success/index.html">
+				</form>
+				
+				<p class="deadline_text">Csak 16 darab van raktáron!</p>
+			</div>
+		</section>
+
+		<!-- /order 1.2 -->
+
+		<!-- benefits 4.1 -->
+
+		<section class="list_section benefits4 dark_theme">
+			<div class="title_block">
+				<h2>A FreshpackPro ELŐNYEI</h2>
+			</div>
+			<div class="list2 two_column">
+				<div class="list_item">
+					<img src="images/benefits4_image1.png" alt="Раскладной стол">
+					<p>A termékek hosszú távú tárolása. Ezek lehetnek gyümölcsök / zöldségek, valamint hús, baromfi, hal, különféle gabonafélék és még sok más.</p>
+				</div>
+				<div class="list_item">
+					<img src="images/benefits4_image3.png" alt="Раскладной стол">
+					<p>Főzzük a Su Vid technikával, azaz vákuumban. Ez a főzési módszer lehetővé teszi az étel összes természetes levének megmentését.</p>
+				</div>
+				<div class="list_item">
+					<img src="images/benefits4_image2.png" alt="Раскладной стол">
+					<p>Előkészítés főzéshez. (házi készítésű ételek): vágja össze a zöldségeket, ha van egy-két szabad órája egy héten, csomagolja be és szívja ki a levegőt a hét napjaira előkészített csomagokból.</p>
+				</div>
+				
+				<div class="list_item">
+					<img src="images/benefits4_image4.png" alt="Раскладной стол">
+					<p>Hermetikusan becsomagol minden terméket. A zöldségek és gyümölcsök frissek maradnak - mert a nedvesség nem párolog el.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- /benefits 4.1 -->
+
+		<!-- reviews 1 -->
+
+		<section class="reviews1_section">
+			<div class="title_block">
+				<h2>Vásárlói vélemények</h2>
+			</div>
+			<div class="content_block">
+				<div class="author_block">
+					<div class="avatar">
+						<img src="images/review1_avatar.png" alt="Раскладной стол">
+					</div>
+					<div class="author_info">
+						<div class="name">Alida</div>
+						<div class="text"></div>
+					</div>
+				</div>
+				<div class="text_block">
+					<p>A készülék nagyon szuper! 5+ szinten értékelném ahogy ellátja funkcióit. A készülék kialakítása nagyon egyszerű. A vákuumszivattyú erős, kiszivattyúzza a zsákot úgy, hogy belül minden tömör lesz. A csomagolás lezárása nagyon jó minőségű. Nélkülözhetetlen segítség a konyhában!</p>
+				</div>
+				<div class="in-stats_block">
+					<div class="icons clearfix">
+						<div class="icon like_icon"></div>
+						<div class="icon comment_icon"></div>
+						<div class="icon send_icon"></div>
+						<div class="icon share_icon"></div>
+					</div>
+					<div class="likes_count">Like-ok: 243</div>
+				</div>
+				
+				
+				<div class="in-date">3 napja</div>
+			</div>
+			<div class="content_block">
+				<div class="author_block">
+					<div class="avatar">
+						<img src="images/review2_avatar.png" alt="Раскладной стол">
+					</div>
+					<div class="author_info">
+						<div class="name">Márta</div>
+						<div class="text"></div>
+					</div>
+				</div>
+				<div class="text_block">
+					<p>Gyors szállítás. Megfelel a leírásnak. Elégedett vagyok a termékkel. Jól szivattyúz és jól lezárja. Még a Zepter vákuumrendszer csomagjai is elférnek. A csomagoláshoz nagyon kényelmes kés tartozik. Összességében minden rendben van. Ajánlom!</p>
+				</div>
+				<div class="in-stats_block">
+					<div class="icons clearfix">
+						<div class="icon like_icon"></div>
+						<div class="icon comment_icon"></div>
+						<div class="icon send_icon"></div>
+						<div class="icon share_icon"></div>
+					</div>
+					<div class="likes_count">Like-ok: 169</div>
+				</div>
+				
+				
+				<div class="in-date">5 nappal ezelőtt</div>
+			</div>
+			<div class="content_block">
+				<div class="author_block">
+					<div class="avatar">
+						<img src="images/review3_avatar.png" alt="Раскладной стол">
+					</div>
+					<div class="author_info">
+						<div class="name">Tekla</div>
+						<div class="text"></div>
+					</div>
+				</div>
+				<div class="text_block">
+					<p>Megérkezett az áru, minden olyan, amilyennek lennie kell. Már megrendeltem a második vákuumcsomagolót, az elsőt anyámnak adtam, elégedett. Ajándékként 10 csomagot kaptam. Köszönöm!</p>
+				</div>
+				<div class="in-stats_block">
+					<div class="icons clearfix">
+						<div class="icon like_icon"></div>
+						<div class="icon comment_icon"></div>
+						<div class="icon send_icon"></div>
+						<div class="icon share_icon"></div>
+					</div>
+					<div class="likes_count">Like-ok: 336</div>
+				</div>
+				
+				
+				<div class="in-date">6 nappal ezelőtt</div>
+			</div>
+		</section>
+
+		<!-- /reviews1 -->
+
+		<!-- order info 1 -->
+
+		<section class="list_section order_info1">
+			<div class="title_block">
+				<h2>Szállítás és fizetés</h2>
+			</div>
+			<div class="list1 image90x90 dark_icon ok-square_icon">
+				<div class="list_item clearfix">
+					<div class="image_block">
+						<div class="image_wrapper">
+							<img src="images/order_info1__icon1.png" alt="Раскладной стол">
+						</div>
+					</div>
+					<div class="text_block">
+						<h4>Gyors szállítás</h4>
+						<p>Az árut 1-3 napon belül szállítjuk. Hagyjon egy kérést, és a menedzser hamarosan felveszi Önnel a kapcsolatot a megrendelés leadása érdekében.</p>
+					</div>
+				</div>
+				<div class="list_item clearfix">
+					<div class="image_block">
+						<div class="image_wrapper">
+							<img src="images/order_info1__icon2.png" alt="Раскладной стол">
+						</div>
+					</div>
+					<div class="text_block">
+						<h4>Csak átvételkor kell fizetni!</h4>
+						<p>Előlegeket nem fogadunk el. A fizetés csak a megrendelés személyes átvételét követően történik.</p>
+					</div>
+				</div>
+				<div class="list_item clearfix">
+					<div class="image_block">
+						<div class="image_wrapper">
+							<img src="images/order_info1__icon3.png" alt="Раскладной стол">
+						</div>
+					</div>
+					<div class="text_block">
+						<h4>Garancia</h4>
+						<p>Minden termék tesztelve van és teljes körű tanúsítvánnyal rendelkezik! </p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- /order info 1 -->
+		<!-- order 1.1 -->
+
+		<section class="order_section dark_theme in-blue_title">
+		<div class="offer_section">
+			<div class="offer_title">
+				<h1>FreshpackPro</h1>
+				<p>VÁKUUM CSOMAGOLÓ A KONYHÁBA</p>
+			</div>
+			<img src="images/offer_top.jpg" alt="Раскладной стол">
+		</div>
+			<div id="order" class="title_block">
+				<h2>RENDELJEN  <i>FreshpackPro-t</i></h2>
+			</div>
+			<div class="order_block">
+				<div class="price_block clearfix">
+					<div class="price_item old">
+						<div class="text">Régi ár:</div>
+						<div class="value"><x-oldprice>29800</x-oldprice> <x-currency>Ft</x-currency></div>
+					</div>
+					<div class="price_item new">
+						<div class="text">ÚJ ÁR:</div>
+						<div class="value"><x-newprice>14900</x-newprice> <x-currency>Ft</x-currency></div>
+					</div>
+				</div>
+				<form class="order_form" action="https://healthbestblog.space/cpatl/api.php" method="post">
+					   
+    <select name="offer" class="form-control country_chang" style="display: none;">
+        <option data-country-code="HU" selected="selected" value="20529">
+            Венгрия        </option>
+    </select>
+
+    					<input class="field" type="text" name="name" placeholder="Adja meg nevét" required data-ordername="">
+					<input class="field" type="tel" name="phone" placeholder="Írja be a telefonszámát" required data-orderphone="">
+                    <input class="button" value="RENDELJE MEG MOST" type="submit" data-ordersubmit="">
+                        <input type="hidden" name="stream_hid" value="QE4Ta0Rg">
+      <input type="hidden" name="offer_id" value="4945">
+
+      
+      <input type="hidden" name="country" value="HU"> 
+
+      <input type="hidden" name="sid1" value="alex">
+      <input type="hidden" name="sid2" value="alex2">
+      <input type="hidden" name="sid3" value="alex3">
+      <input type="hidden" name="redirect_url" value="https://amazinghealth.github.io/germitox-ita/success/index.html">
+				</form>
+				
+				<p class="deadline_text">Csak 16 darab van raktáron!</p>
+			</div>
+		</section>
+
+		<!-- /order 1.1 -->
+	</div>
+<center style="margin: 30px auto"><p>OOO "OSTROV PRODAZH" OGRN: 1197746695530 VAT: 7708365555</p>
+<p>129090, Moscow, pereulok Zhivarev, house 8, stroenie 3, flat 16 email: ostrov.prodazh@mail.com Skype: ostrov.prodazh@mail.com</p> 
+
+
+    
+            <p class="conf-link doclinks">
+        <a class="nav-link" href="" onclick="window.open('/policy_en.php'); return false;">Privacy Policy</a>
+          |
+        <a class="nav-link" href="" onclick="window.open('/terms_en.php'); return false;">Terms & Conditions</a>
+      </p>
+      
+    
+</center>
+	<!-- scripts -->
+
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/scripts.js"></script>
+	
+	<!-- /scripts -->
+
+	
+</body>
+</html>
